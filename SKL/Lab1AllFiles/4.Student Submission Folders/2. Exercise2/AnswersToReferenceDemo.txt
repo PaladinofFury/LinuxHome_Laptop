@@ -1,0 +1,19 @@
+1. The file is named as directed.
+2. Line 55: the reference "int& xr" is declared as reference but is not initialized. 
+    Since a reference exists only as an alias for a separate place in memory, it cannot be created without initializing it as such.
+3. When the onePlus(int a) method is called, the input parameter "int a" is being passed into the 
+    function by value. The function receives this value, not the object/data itself, as an argument to
+    use in the function. When the function completes at the "}" symbol, that value is erased along with the function
+    and therefore anything the function did to that value is also erased and not seen by main().
+4.The argument in refIncrement() is a reference "int& a". In this case the function being passed this reference
+    has access to the actual object/data itself and not just a copy of it's value(s). Therefore changes made to it
+    in the refIncrement() function carry over/back to the main() function.
+5.'Pair' is a struct which is basically just an object with no methods and all contents are public.
+    'pairs' is a vector which is basically an array that can change it's size while the program is executing.
+6. value() receives a const reference to a string "const string& s" as an argument. const meaning that s will maintain
+    it's current state i.e whatever happens inside of value() cannot change "s" which is also the actual object
+    and not a copy of it or it's value(s).
+7. value() returns a reference to an int. Meaning that it returns the actual object within the method itself.
+    In this case, it is returning a "pairs.val" and not merely a copy of it's value.
+    It can be legal because it is always going to refer to an int that exists within "pairs".
+    If ++ was applied to it's return value, some "pairs.val" would increment by 1.

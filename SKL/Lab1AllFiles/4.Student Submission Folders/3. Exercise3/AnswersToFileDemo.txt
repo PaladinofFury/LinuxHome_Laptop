@@ -1,0 +1,19 @@
+1. Done
+2. File is named as directed.
+3. Program initialized as directed.
+4. It has a main function.
+5. The program functions as described.
+    Once I completed the program to my satisfaction it does not encounter any problems with the different
+    end of line characters.
+
+    /* I do not believe that it matters what OS I develop my code on, but which OS I compile for or which compiler
+    that I use does change what kind of files are executables and may have other differences. */
+
+    I was incorrect about the OS affecting the code I develop. I tried to compile and run my code on VS Studio on my system
+    without using the docker and found that it didn't know what to do with the file. Trying again on VS Code after installing
+    a compiler revealed to me that there was some "g++" written into some kind of header file for my program and it obviously
+    did not know what to do with a linux compiler.
+
+    I am not sure if it changed the files, since using the docker container of csslab meant I did 
+    not have to move files from one system to another. But I did open each file using the Linux
+    "od -a" command and they did in-fact contain very different ASCII contents from one another.
