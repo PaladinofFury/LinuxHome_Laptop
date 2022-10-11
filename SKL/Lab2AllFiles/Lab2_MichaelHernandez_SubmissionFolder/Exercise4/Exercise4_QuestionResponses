@@ -1,0 +1,7 @@
+1. In java the array would be declared using the "new" operator to give it the appropriate space in memory.
+2. Done.
+3. Done.
+4. The pointer version is better on the basis that it uses less memory. The function does not need to 
+    create copies of the data structures when called because they are using the objects themselves via pointer.
+5. We set each pointer variable to null after deleting them because their names are still valid, even though their memory is no longer
+    reserved for use by the program. We don't want to cause any issues by accidentally calling those variables after we have deleted them.

@@ -1,0 +1,3 @@
+From this lab I have learned that there are myriad uses for pointers in programs. One of the best reasons for using them is dynamic and therefore, if handled well, more efficient use of memory.
+
+In order to handle that memory well, we must delete any dynamic memory we allocate ourselves, and we must take care to also set pointer variables = nullptr after deleting their associated memory. This will keep us from accidentally calling a variable that is still valid, but has had it's memory re-claimed by the operating system after using the delete function. Delete must also be used very specifically, i.e delete[] for pointers to arrays, etc.

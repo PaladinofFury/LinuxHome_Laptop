@@ -1,0 +1,14 @@
+1. display2 has an argument requiring an int pointer "int*" which is 
+    different from display 1 which asks for an int by reference "int&".
+    However, since both are called with the same arguments in main,
+    display2 doesn't know what to do with an int, only an int*; which
+    the compiler recognizes and flags as an error.
+
+2. To fix the problem without changing any of display2 itself, I simply
+    passed it the de-referenced aPtr variable "*aPtr" instead, which works.
+
+3. done.
+4. done.
+5. by changing the value of "*aPtr" the value of "a" is also changed. This is
+    because "*aPtr" is pointing at the value stored in the memory assigned
+    to "a".
