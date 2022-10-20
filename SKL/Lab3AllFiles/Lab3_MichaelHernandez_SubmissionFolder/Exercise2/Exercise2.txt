@@ -1,0 +1,5 @@
+1. I believe that is already happening at line 42 of ScopeEtc.cpp. 
+    Yes it works, but it just gives the int i = 3, since SuperInt.theValue() returns a 3.
+2. Not that does not work, "theValue()" has the type identifier of "const" and putting it on the left
+    of an assignment operator "=" would mean that we were trying to change some aspect of that currently
+    const type object/value.

@@ -1,0 +1,6 @@
+1/2. Creating each object with it's constructor calls each superclass/parent
+    on it's way down to the called object. Additionally, the destructor methods
+    are automatically called, including the overloaded functionality of printing,
+    at the end of the program. When they destruct, they destruct from the bottom up,
+    opposite of the way they are created.
+exercise 3.1. the initialization list method seems a bit cleaner/easier to read.

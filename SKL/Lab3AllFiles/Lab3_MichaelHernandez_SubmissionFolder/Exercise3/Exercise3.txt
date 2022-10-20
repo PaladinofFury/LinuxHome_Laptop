@@ -1,0 +1,6 @@
+1. Evidently there is no problem with the .h 
+    defining 2 classes, though this is the first time that
+    I am seeing it. It appears as though it is a simple
+    helper object only used for throwing exceptions related
+    to the main class.
+3. Answered on line 15 in ClassTest.cpp, since no location was specified in the code.
